@@ -1,0 +1,22 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "ts"
+  ],
+  "author": "René Herrmann",
+  "license": "MIT",
+  "description": "node like its 2025",
+  "devDependencies": {
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/node23": "^23.0.1",
+    "@types/node": "^22.13.17"
+  }
+}
