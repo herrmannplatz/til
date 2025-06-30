@@ -1,0 +1,27 @@
+set dotenv-load
+
+alias b := build
+
+default: lint build test
+
+serve:
+  @echo "Starting server with database $DATABASE_ADDRESS on port $SERVER_PORT …"
+  #./server --database $DATABASE_ADDRESS --port $SERVER_PORT
+
+lint:
+  @echo "Linting…"
+
+test: build
+  @echo "Testing…"
+
+build:
+  @echo "Building…"
+
+[positional-arguments]
+@foo bar:
+  echo $0
+  echo $1
+
+js:
+  #!/usr/bin/env node
+  console.log('Greetings from JavaScript!')
